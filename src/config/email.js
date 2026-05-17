@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
 
 const sendEmail = async ({ to, subject, html }) => {
   await transporter.sendMail({
-    from: `"SkyNexes" <${process.env.EMAIL_FROM}>`,
+    from: `"Skynexes" <${process.env.EMAIL_FROM}>`,
     to,
     subject,
     html,
